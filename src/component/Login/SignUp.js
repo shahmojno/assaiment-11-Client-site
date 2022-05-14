@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
+import './SignUp.css'
 
 
 const SignUp = () => {
@@ -49,7 +50,7 @@ const SignUp = () => {
     }
 
     return (
-        <div className='form-container'>
+        <div className='form-container '>
             <div>
                 <h1 className='form-title'>SignUp</h1>
                 <form onSubmit={handleCreateUser}>

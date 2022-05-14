@@ -70,7 +70,7 @@ const Login = () => {
                     </div>
                 </form>
                 <p>
-                    New To Ema-John? <Link className='form-link' to="/signup">Create an account</Link>
+                    NewT o Smart Phone? <Link className='form-link' to="/signup">Create an account</Link>
                 </p>
                 <button onClick={handleGoogleSignIn}>Google Sign In</button>
             </div>

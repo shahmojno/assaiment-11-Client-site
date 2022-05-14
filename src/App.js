@@ -9,6 +9,7 @@ import Header from './component/Header/Header';
 import Manageitem from './component/Manageitem';
 import Additem from './component/Additem';
 import SignUp from './component/Login/SignUp';
+import Blogs from './component/Blogs/Blogs';
 
 
 
@@ -32,6 +33,7 @@ function App() {
         <Route path='/manageitem' element={<Manageitem></Manageitem>}></Route>
         <Route path='/additem' element={<Additem></Additem>}></Route>
         <Route path='signup' element={<SignUp></SignUp>}></Route>
+        <Route path='blogs' element={<Blogs></Blogs>}></Route>
       </Routes>
 
 
