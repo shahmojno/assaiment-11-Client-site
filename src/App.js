@@ -8,9 +8,10 @@ import Login from './component/Login/Login';
 import Header from './component/Header/Header';
 import Manageitem from './component/Manageitem';
 import Additem from './component/Additem';
+import SignUp from './component/Login/SignUp';
 
 
-const auth = getAuth(app);
+
 
 
 
@@ -18,18 +19,9 @@ const auth = getAuth(app);
 
 
 function App() {
-  const provider = new GoogleAuthProvider();
 
-  const handleGoogleSignIn = () => {
-    signInWithPopup(auth, provider)
-      .then(result => {
-        const user = result.user;
-        console.log(user);
-      })
-      .catch(error => {
-        console.log('error', error);
-      })
-  }
+
+
   return (
     <div className="App">
       <Header></Header>
@@ -39,10 +31,10 @@ function App() {
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/manageitem' element={<Manageitem></Manageitem>}></Route>
         <Route path='/additem' element={<Additem></Additem>}></Route>
+        <Route path='signup' element={<SignUp></SignUp>}></Route>
       </Routes>
 
-      <h1>SmartPhone Inventory</h1>
-      <button onClick={handleGoogleSignIn}>Google Sign In</button>
+
     </div>
   );
 }

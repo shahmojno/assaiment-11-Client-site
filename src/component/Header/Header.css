@@ -7,3 +7,8 @@
 .header nav a:hover{
 color: goldenrod;
 }
+
+.header{
+    margin-top: 30px;
+
+}
