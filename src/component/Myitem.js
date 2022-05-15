@@ -1,42 +1,40 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-
-
-
-const Myitem = ({ product }) => {
-    const { id: _id, name, img, description, price, model } = product;
-    const navigate = useNavigate();
-    const navigateToServiceDetails = id => {
-        navigate(`/product/${id}`);
-
-    }
+import { useEffect } from 'react';
+import { useState } from 'react';
+import ItemCode from './ItemCode';
 
 
 
 
+const Myitem = () => {
+    const [additems, setProducts] = useState([]);
+    useEffect(() => {
+        fetch('http://localhost:5000/product')
+            .then(res => res.json())
+            .then(data => setProducts(data));
+    }, [])
     return (
+        <div className='container'>
+            <div className="row">
 
-
-        <div className='g-5 col-sm-12 col-md-6 col-lg-4'>
-            <div className="card" style={{ width: "18rem" }}>
-                <img src={img} className="card-img-top" alt="..." />
-                <div className="card-body">
-                    <h5 className="card-title">Name : {name}</h5>
-                    <p className="card-text">Model : {model}</p>
-                    <p className="card-text">Price : {price}</p>
-                    <p className="card-text">Description : {description}</p>
-
-                </div>
+                {
+                    additems.map(product => <ItemCode
+                        key={product._id}
+                        product={product}
+                    ></ItemCode>)
+                }
             </div>
         </div>
-
-
 
 
     );
 };
 
 export default Myitem;
+
+
+
+
 
 
 
