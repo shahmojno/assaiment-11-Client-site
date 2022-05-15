@@ -3,7 +3,8 @@ import { Carousel } from 'react-bootstrap';
 import photo1 from '../../images/1.jpg';
 import photo2 from '../../images/2.jpg';
 import photo3 from '../../images/6.jpg';
-import Additems from '../Additem';
+
+import Myitem from '../Myitem';
 
 
 
@@ -55,7 +56,7 @@ const Home = () => {
                 </Carousel.Item>
             </Carousel>
             <div>
-                <Additems></Additems>
+                <Myitem></Myitem>
             </div>
         </div>
 

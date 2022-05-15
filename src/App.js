@@ -23,6 +23,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='/product/:productId'
+          element={<Manageitem></Manageitem>}></Route>
         <Route path='/manageitem' element={<Manageitem></Manageitem>}></Route>
         <Route path='/myitem' element={<Myitem></Myitem>}></Route>
         <Route path='/additem' element={<Additem></Additem>}></Route>
