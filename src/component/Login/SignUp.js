@@ -6,6 +6,7 @@ import auth from '../../firebase.init';
 import './SignUp.css'
 
 
+
 const SignUp = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');

@@ -4,7 +4,7 @@ import './Blogs.css'
 const Blogs = () => {
     return (
         <div >
-            <h1 className='mt-5'>MY Blogs</h1>
+            <h1 className='mt-5 ml-5' >MY Blogs</h1>
             <div className='blogs'>
                 <h5 >1. Difference between Nodejs and JavaScript : </h5>
                 <p >Javascript : Javascript is a programming language that is used for writing scripts on the website. </p>
@@ -13,7 +13,7 @@ const Blogs = () => {
                 <p >NodeJS : Nodejs is used in server-side development. </p>
             </div>
 
-            <div className='blogs' >
+            <div className='blogs'>
                 <h5 >2. Differences between SQL and NoSQL : </h5>
                 <p >SQL : Tables with fixed rows and columns </p>
                 <p >NoSQL : Document: JSON documents, Key-value: key-value pairs, Wide-column: tables with rows and dynamic columns, Graph: nodes and edges </p>
@@ -22,7 +22,7 @@ const Blogs = () => {
 
             </div>
 
-            <div className='blogs' >
+            <div className='blogs'>
                 <h5 >3. JWT (JSON Web Token) : </h5>
                 <p >JWT, or JSON Web Token, is an open standard used to share information between two parties securely — a client and a server. In most cases, it’s an encoded JSON containing a set of claims and a signature. </p>
                 <p >Header :  The header consists of two parts:

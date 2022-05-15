@@ -21,10 +21,10 @@ const Myitem = ({ product }) => {
             <div className="card" style={{ width: "18rem" }}>
                 <img src={img} className="card-img-top" alt="..." />
                 <div className="card-body">
-                    <h5 className="card-title">{name}</h5>
-                    <p className="card-text">{model}</p>
-                    <p className="card-text">{price}</p>
-                    <p className="card-text">{description}</p>
+                    <h5 className="card-title">Name : {name}</h5>
+                    <p className="card-text">Model : {model}</p>
+                    <p className="card-text">Price : {price}</p>
+                    <p className="card-text">Description : {description}</p>
 
                 </div>
             </div>

@@ -4,8 +4,8 @@ import './Header.css'
 
 const Header = () => {
     return (
-        <div className='header'>
-            <nav>
+        <div className='header1'>
+            <nav className='bg-primary py-2'>
                 <Link to="/">Home</Link>
                 <Link to="/login">Login</Link>
                 <Link to="/manageitem">Manage Items</Link>

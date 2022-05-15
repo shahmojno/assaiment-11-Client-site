@@ -6,6 +6,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import './Login.css'
 
+
 const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -51,29 +52,33 @@ const Login = () => {
 
 
     return (
-        <div className='form-container'>
-            <div>
-                <h1 className='form-title'>Login</h1>
-                <form onSubmit={handleUsersSignIn}>
-                    <div className='input-group'>
-                        <label htmlFor='email'>Email</label>
-                        <input onBlur={handleEmailBlur} type="email" name='email' id='' required />
-                        <div className="input-group">
-                            <label htmlFor="password">password</label>
-                            <input onBlur={handlePasswordBlur} type="password" name="password" id="" required />
+        <div id='loging-all'>
+
+            <div className='form-container'>
+                <div>
+                    <h1 className='form-title mx-auto'>Login</h1>
+                    <form onSubmit={handleUsersSignIn}>
+                        <div className='input-group'>
+                            <label htmlFor='email'>Email</label>
+                            <input onBlur={handleEmailBlur} type="email" name='email' id='' required />
+                            <div className="input-group">
+                                <label htmlFor="password">password</label>
+                                <input onBlur={handlePasswordBlur} type="password" name="password" id="" required />
+                            </div>
+                            <p style={{ color: 'red' }}>{error?.message}</p>
+                            {
+                                loading && <p> Loading...</p>
+                            }
+                            <input className='form-submit' type="submit" value="Login" />
                         </div>
-                        <p style={{ color: 'red' }}>{error?.message}</p>
-                        {
-                            loading && <p> Loading...</p>
-                        }
-                        <input className='form-submit' type="submit" value="Login" />
-                    </div>
-                </form>
-                <p>
-                    NewT o Smart Phone? <Link className='form-link' to="/signup">Create an account</Link>
-                </p>
-                <button onClick={handleGoogleSignIn}>Google Sign In</button>
+                    </form>
+                    <p>
+                        NewT o Smart Phone? <Link className='form-link' to="/signup">Create an account</Link>
+                    </p>
+                    <button onClick={handleGoogleSignIn}>Google Sign In</button>
+                </div>
             </div>
+
         </div>
     );
 };

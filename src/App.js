@@ -1,7 +1,3 @@
-
-import './App.css';
-import app from './firebase.init';
-import { getAuth, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 import { Route, Routes } from 'react-router-dom';
 import Home from './component/Home/Home';
 import Login from './component/Login/Login';
@@ -10,6 +6,7 @@ import Manageitem from './component/Manageitem';
 import Additem from './component/Additem';
 import SignUp from './component/Login/SignUp';
 import Blogs from './component/Blogs/Blogs';
+import Footer from './component/Footer/Footer';
 
 
 
@@ -24,7 +21,7 @@ function App() {
 
 
   return (
-    <div className="App">
+    <div >
       <Header></Header>
 
       <Routes>
@@ -35,6 +32,7 @@ function App() {
         <Route path='signup' element={<SignUp></SignUp>}></Route>
         <Route path='blogs' element={<Blogs></Blogs>}></Route>
       </Routes>
+      <Footer></Footer>
 
 
     </div>
