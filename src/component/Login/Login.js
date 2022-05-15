@@ -52,16 +52,16 @@ const Login = () => {
 
 
     return (
-        <div id='loging-all'>
+        <div >
 
-            <div className='form-container'>
-                <div>
-                    <h1 className='form-title mx-auto'>Login</h1>
+            <div className='form-container mt-5'>
+                <div >
+                    <h1 className='form-title mx-auto mt-2'>Login</h1>
                     <form onSubmit={handleUsersSignIn}>
-                        <div className='input-group'>
+                        <div >
                             <label htmlFor='email'>Email</label>
                             <input onBlur={handleEmailBlur} type="email" name='email' id='' required />
-                            <div className="input-group">
+                            <div >
                                 <label htmlFor="password">password</label>
                                 <input onBlur={handlePasswordBlur} type="password" name="password" id="" required />
                             </div>
@@ -69,13 +69,13 @@ const Login = () => {
                             {
                                 loading && <p> Loading...</p>
                             }
-                            <input className='form-submit' type="submit" value="Login" />
+                            <input type="submit" value="Login" />
                         </div>
                     </form>
-                    <p>
-                        NewT o Smart Phone? <Link className='form-link' to="/signup">Create an account</Link>
+                    <p >
+                        NewT o Smart Phone? <Link to="/signup">Create an account</Link>
                     </p>
-                    <button onClick={handleGoogleSignIn}>Google Sign In</button>
+                    <button className='mb-5' onClick={handleGoogleSignIn}>Google Sign In</button>
                 </div>
             </div>
 

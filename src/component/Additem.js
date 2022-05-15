@@ -19,8 +19,8 @@ const Additem = () => {
             })
     };
     return (
-        <div className='w-50 mx-auto'>
-            <h2> Add a product</h2>
+        <div className='w-50 mx-auto mt-5'>
+            <h2 > Add a product</h2>
 
             <form className='d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
                 <input className='mb-2' placeholder='Name' {...register("name", { required: true, maxLength: 20 })} />

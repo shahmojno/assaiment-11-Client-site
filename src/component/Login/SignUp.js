@@ -51,28 +51,28 @@ const SignUp = () => {
     }
 
     return (
-        <div className='form-container '>
+        <div className='form-container mt-5'>
             <div>
-                <h1 className='form-title'>SignUp</h1>
+                <h1 className='form-title mt-2'>SignUp</h1>
                 <form onSubmit={handleCreateUser}>
-                    <div className='input-group'>
+                    <div >
                         <label htmlFor='email'>Email</label>
                         <input onBlur={handleEmailBlur} type="email" name='email' id='' required />
-                        <div className="input-group">
+                        <div >
                             <label htmlFor="password">Password</label>
                             <input onBlur={handlePasswordBlur} type="password" name="password" id="" required />
                         </div>
-                        <div className="input-group">
+                        <div >
                             <label htmlFor="confirm-password">Confirm Password</label>
                             <input onBlur={handleConfirmPasswordBlur} type="password" name="confirm-password" id="" required />
                         </div>
                         <p style={{ color: 'red' }}>{error}
-                        </p>                        <input className='form-submit' type="submit" value="Signup" />
+                        </p>                        <input className='mx-auto mt-2 mb-2' type="submit" value="Signup" />
                     </div>
                 </form>
                 <p>
                     Already have an account? <Link
-                        className='form-link' to="/login">Login</Link>
+                        to="/login">Login</Link>
                 </p>
             </div>
         </div>
