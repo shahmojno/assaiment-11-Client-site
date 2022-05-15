@@ -5,7 +5,7 @@ const ProductDetails = productId => {
     console.log(product);
 
     useEffect(() => {
-        const url = `http://localhost:5000/product/${productId}`;
+        const url = `https://evening-escarpment-39400.herokuapp.com/product/${productId}`;
         console.log(url);
         fetch(url)
             .then(res => res.json())

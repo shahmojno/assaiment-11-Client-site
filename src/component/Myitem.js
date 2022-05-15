@@ -9,7 +9,7 @@ import ItemCode from './ItemCode';
 const Myitem = () => {
     const [additems, setProducts] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/product')
+        fetch('https://evening-escarpment-39400.herokuapp.com/product')
             .then(res => res.json())
             .then(data => setProducts(data));
     }, [])
