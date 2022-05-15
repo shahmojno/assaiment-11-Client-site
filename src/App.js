@@ -8,6 +8,7 @@ import Blogs from './component/Blogs/Blogs';
 import Footer from './component/Footer/Footer';
 import Myitem from './component/Myitem';
 import Additem from './component/Additem';
+import NotFound from './component/NotFound';
 
 
 
@@ -30,6 +31,7 @@ function App() {
         <Route path='/additem' element={<Additem></Additem>}></Route>
         <Route path='signup' element={<SignUp></SignUp>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
 
