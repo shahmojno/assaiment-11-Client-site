@@ -4,7 +4,7 @@ import './Blogs.css'
 const Blogs = () => {
     return (
         <div >
-            <h1 className='mt-5 ml-5' >MY Blogs</h1>
+            <h1 className='my-blogs' >MY Blogs</h1>
             <div className='blogs'>
                 <h5 >1. Difference between Nodejs and JavaScript : </h5>
                 <p >Javascript : Javascript is a programming language that is used for writing scripts on the website. </p>

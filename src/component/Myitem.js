@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import ItemCode from './ItemCode';
+import './Myitem.css'
 
 
 
@@ -14,7 +15,9 @@ const Myitem = () => {
             .then(data => setProducts(data));
     }, [])
     return (
+
         <div className='container'>
+            <h1 className='my-item'>My items</h1>
             <div className="row">
 
                 {
